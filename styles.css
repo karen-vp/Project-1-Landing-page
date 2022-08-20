@@ -51,6 +51,15 @@ a.login-container{
     align-items: center;
     gap: 10px;
 }
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+    nav.nav-container{
+        padding: 15px 20px 0 20px;
+    }
+   ul.header-nav, a.login-container{
+    display: none;
+   }
+}
 
 /*SECCION JUMBOTRON*/
 
@@ -62,16 +71,36 @@ div.grid-container{
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: auto;
+
 }
 
 div.call-ofaction{
     grid-column: 1/2;
-    grid-row: auto;
-    border: 5px solid red;
+    grid-row: 1/2;
+    background-color: #6C6E58;
+
 }
 
 div.portada{
     grid-column: 2/3;
-    grid-row: auto;
-    border: 5px solid red;
+    grid-row: 1/2;
+
+}
+
+img.foto-portada{
+        max-width: 100%;
+}
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+    div.grid-container{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    div.portada{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        /* border: 5px solid red; */
+    }
 }
