@@ -84,14 +84,18 @@ a.login-container{
 
 section.jumbotron-container{
     width: 100%;
+
 }
 
 div.grid-container{
+    
     display: grid;
     grid-template-columns: 50% 50%;
     grid-auto-rows: 800px;
 
     background-color: #B4C9CD;
+
+
 
 
 }
@@ -189,6 +193,7 @@ img.foto-portada{
     
     }
 
+
     div.callofa-container{
         color: black;
         padding: 0px 15px 0 15px;
@@ -228,4 +233,131 @@ img.foto-portada{
         background-color: black;
         color:white;
     }
+}
+
+/*SECCION CATALOGO*/
+
+section.catalogo-container{
+    width: 100%;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-columns: auto;
+
+}
+
+.header-catalogo{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    justify-self: center;
+    margin-top: 50px;
+
+    display: flex;
+    flex-flow:column nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* border: 5px solid red; */
+}
+
+h2{
+    font-size: 2.5em;
+}
+
+div.card-container{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+div.card{
+    
+    width: 420px;
+    padding: 20px 30px;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    
+    /* border: 5px solid red; */
+ 
+}
+
+.img-product{
+    width: 380px;
+}
+
+div.product-info{
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    /* border: 5px solid red; */
+}
+
+
+
+p.product-title{
+    font-weight: bold;
+}
+
+p.product-subtitle{
+    margin-top: 5px;
+    font-size: 0.9em;
+}
+
+a.btn-shop{
+    text-decoration: none;
+    background-color: black;
+    color:white;
+    margin-top: 30px;
+    padding: 15px 30px;
+
+}
+
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+
+    .header-catalogo{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        margin-top: 50px;
+    
+        display: flex;
+        flex-flow:column wrap;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    p.d2{
+        font-size: 1.2em !important;
+    }
+
+    div.card{
+        
+        width: 380px;
+        padding: 20px 30px;
+
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+    }
+
+    .img-product{
+        width: 300px;
+    }
+
 }
