@@ -89,9 +89,10 @@ section.jumbotron-container{
 div.grid-container{
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 70%;
+    grid-auto-rows: 800px;
 
     background-color: #B4C9CD;
+
 
 }
 
@@ -110,6 +111,7 @@ div.callofa-container{
     justify-content: center;
     align-items: flex-start;
     gap: 10px;
+
 }
 
 h1{
@@ -162,7 +164,6 @@ div.portada{
     padding: 0;
     grid-column: 2/3;
     grid-row: 1/2;
-
 }
 
 img.foto-portada{
@@ -186,5 +187,45 @@ img.foto-portada{
         grid-column: 1/2;
         grid-row: 2/3;
     
+    }
+
+    div.callofa-container{
+        color: black;
+        padding: 0px 15px 0 15px;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    h1{
+        font-size: 3em;
+        padding: 50px 0 20px;
+
+    }
+
+    p.description{
+        color: #3E423A;
+        font-size: 1.5em;
+        padding-bottom: 20px;
+    }
+
+    input.email-input{
+        width: 100%;
+        padding: 20px;
+        border-style: none;
+        border-radius: 5px;
+    }
+    
+    button.button-enviar{
+        width: 100%;
+        padding: 20px 0px;
+        
+        border-style: none;
+        border-radius: 5px;
+        background-color: black;
+        color:white;
     }
 }
