@@ -165,7 +165,6 @@ button.button-enviar{
 }
 
 div.portada{
-    padding: 0;
     grid-column: 2/3;
     grid-row: 1/2;
 }
@@ -196,7 +195,7 @@ img.foto-portada{
 
     div.callofa-container{
         color: black;
-        padding: 0px 15px 0 15px;
+        padding: 0px 15px 20px 15px;
         height: 100%;
         display: flex;
         flex-flow: column wrap;
@@ -273,6 +272,7 @@ div.card-container{
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
+
     
 }
 
@@ -286,8 +286,6 @@ div.card{
     justify-content: center;
     align-items: center;
     
-    /* border: 5px solid red; */
- 
 }
 
 .img-product{
@@ -302,7 +300,6 @@ div.product-info{
     justify-content: space-between;
     align-items: flex-start;
 
-    /* border: 5px solid red; */
 }
 
 
@@ -362,3 +359,89 @@ a.btn-shop{
 
 }
 
+/*SECCIÓN ADICIONAL*/
+
+section.additional-container{
+    background-color: #F0CC94;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: auto;
+    margin-top: 50px;
+}
+
+div.grid-foto{
+    grid-column: 1/2;
+    grid-row: 1/2;
+   
+
+}
+
+div.grid-info{
+    grid-column: 2/3;
+    grid-row: 1/2;
+   
+
+}
+
+div.info-section{
+    padding: 0px 50px 0 50px;
+    height: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center !important;
+    gap: 20px;
+
+}
+
+h3{
+    font-size: 1.8em;
+    text-align: center;
+}
+
+a.btn-contact{
+    color: black;
+    text-decoration: none;
+    border: 2px solid black;
+    padding:15px 30px;
+}
+
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+
+    section.additional-container{
+        background-color: #F0CC94;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-auto-rows: auto;
+    
+    }
+
+    div.grid-foto{
+        grid-column: 1/2;
+        grid-row: 2/3;
+
+        border: 2px solid red;
+
+    }
+    
+    div.grid-info{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+        border: 2px solid red;
+        
+    }
+
+
+    div.info-section{
+        padding: 30px 20px 30px 20px;
+        height: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+    }
+}
