@@ -154,10 +154,11 @@ input.email-input{
     border-radius: 5px;
 }
 
-button.button-enviar{
+.button-enviar{
     width: 15%;
     padding: 20px 0px;
-    
+    text-decoration: none;
+    text-align: center;
     border-style: none;
     border-radius: 5px;
     background-color: black;
@@ -223,7 +224,7 @@ img.foto-portada{
         border-radius: 5px;
     }
     
-    button.button-enviar{
+    a.button-enviar{
         width: 100%;
         padding: 20px 0px;
         
@@ -443,5 +444,84 @@ a.btn-contact{
         align-items: center;
         gap: 20px;
 
+    }
+}
+
+/*SECCIÓN FOOTER*/
+
+div.gridfooter-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1fr, 5);
+    grid-template-rows: repeat(1fr, 2);
+}
+
+div.griditem-1{
+    grid-column: 1/2;
+    grid-row: 1/2;
+
+    border: 2px solid blue;
+    padding: 50px 100px;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 30px;
+}
+
+img.social-icons{
+    width: 30px;
+}
+
+div.griditem-2{
+    grid-column:2/3;
+    grid-row: 1/2 ;
+    border: 2px solid blue;
+}
+
+div.griditem-3{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    border: 2px solid blue;
+}
+
+div.griditem-4{
+    grid-column: 4/5 ;
+    grid-row: 1/2 ;
+    border: 2px solid blue;
+}
+
+div.griditem-5{
+    grid-column: 5/6 ;
+    grid-row: 1/2;
+    border: 2px solid blue;
+}
+
+div.griditem-6{
+    grid-column: 1/6;
+    grid-row: 2/3;
+    border: 2px solid blue;
+}
+
+/*Vista para tabletas y telefonos*/
+@media only screen and (max-width: 768px) {
+
+    div.gridfooter-container{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1fr, 2);
+        grid-template-rows: repeat(1fr, 5);
+    }
+
+    div.griditem-1{
+        grid-column: 1/5;
+        grid-row: 1/2;
+
+        border: 2px solid blue;
+        padding: 50px 20px 30px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 30px;
     }
 }
