@@ -165,7 +165,6 @@ div.portada{
 }
 
 img.foto-portada{
-        /* max-width: 100%; */
         display: block;
         width: 100%; 
         height: 100%; 
@@ -251,7 +250,7 @@ section.catalogo-container{
     justify-content: center;
     align-items: center;
     gap: 10px;
-    /* border: 5px solid red; */
+    
 }
 
 h2{
