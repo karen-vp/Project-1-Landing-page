@@ -430,9 +430,10 @@ a.btn-contact{
         display: flex;
         flex-flow: column wrap;
         justify-content: center;
-        align-items: center;
+        align-items: center !important;
+        text-align: center;
         gap: 20px;
-
+       
     }
 }
 
